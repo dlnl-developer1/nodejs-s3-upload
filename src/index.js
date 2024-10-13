@@ -14,8 +14,8 @@ const s3 = new S3({
 
 // 파일 경로 및 버킷 정보
 const filePath = "<local-file-path>";
-const folderName = "<folder-name>";
-const contentType = "<content-mime-type>";
+const folderName = "<folder-name>"; // tts, img 등
+const contentType = "<content-mime-type>"; // audio/mp3, image/png 등
 const bucketName = process.env.S3_BUCKET_NAME;
 const objectKey = `${folderName}/${path.basename(filePath)}`; // 파일 이름
 
